@@ -1,0 +1,144 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+public class endAndCredit : MonoBehaviour {
+    public Text one;
+    public Text two;
+    public Text three;
+    public Text four;
+    public Text five;
+    public Text six;
+    public Text seven;
+    public Text eight;
+    public Text nine;
+    public Text ten;
+    public Text eleven;
+    public Text douze;
+    public Text thirteen;
+    public Text fourtheen;
+    public Text fiveteen;
+    public Text Title;
+    public Text Thanks;
+    public Text Music;
+    public Text ListeOfMusic;
+    public Text madeBy;
+    public Text jam;
+    IEnumerator Start()
+    {
+        one.canvasRenderer.SetAlpha(0.0f);
+        two.canvasRenderer.SetAlpha(0.0f);
+        three.canvasRenderer.SetAlpha(0.0f);
+        four.canvasRenderer.SetAlpha(0.0f);
+        five.canvasRenderer.SetAlpha(0.0f);
+        six.canvasRenderer.SetAlpha(0.0f);
+        seven.canvasRenderer.SetAlpha(0.0f);
+        eight.canvasRenderer.SetAlpha(0.0f);
+        nine.canvasRenderer.SetAlpha(0.0f);
+        ten.canvasRenderer.SetAlpha(0.0f);
+        eleven.canvasRenderer.SetAlpha(0.0f);
+        douze.canvasRenderer.SetAlpha(0.0f);
+        thirteen.canvasRenderer.SetAlpha(0.0f);
+        fourtheen.canvasRenderer.SetAlpha(0.0f);
+        fiveteen.canvasRenderer.SetAlpha(0.0f);
+        Title.canvasRenderer.SetAlpha(0.0f);
+        Thanks.canvasRenderer.SetAlpha(0.0f);
+        Music.canvasRenderer.SetAlpha(0.0f);
+        ListeOfMusic.canvasRenderer.SetAlpha(0.0f);
+        madeBy.canvasRenderer.SetAlpha(0.0f);
+        jam.canvasRenderer.SetAlpha(0.0f);
+        Fadein(one);
+        yield return new WaitForSeconds(3);
+        Fadeout(one);
+        yield return new WaitForSeconds(3);
+        Fadein(two);
+        yield return new WaitForSeconds(3);
+        Fadeout(two);
+        yield return new WaitForSeconds(3);
+        Fadein(three);
+        yield return new WaitForSeconds(3);
+        Fadeout(three);
+        yield return new WaitForSeconds(3);
+        Fadein(four);
+        yield return new WaitForSeconds(3);
+        Fadeout(four);
+        yield return new WaitForSeconds(3);
+        Fadein(five);
+        yield return new WaitForSeconds(3);
+        Fadeout(five);
+        yield return new WaitForSeconds(3);
+        Fadein(six);
+        yield return new WaitForSeconds(3);
+        Fadeout(six);
+        yield return new WaitForSeconds(3);
+        Fadein(seven);
+        yield return new WaitForSeconds(3);
+        Fadeout(seven);
+        yield return new WaitForSeconds(3);
+        Fadein(eight);
+        yield return new WaitForSeconds(3);
+        Fadeout(eight);
+        yield return new WaitForSeconds(3);
+        Fadein(nine);
+        yield return new WaitForSeconds(3);
+        Fadeout(nine);
+        yield return new WaitForSeconds(3);
+        Fadein(ten);
+        yield return new WaitForSeconds(3);
+        Fadeout(ten);
+        yield return new WaitForSeconds(9);
+        Fadein(eleven);
+        yield return new WaitForSeconds(4);
+        Fadeout(eleven);
+        yield return new WaitForSeconds(4);
+        Fadein(douze);
+        yield return new WaitForSeconds(3);
+        Fadeout(douze);
+        yield return new WaitForSeconds(3);
+        Fadein(thirteen);
+        yield return new WaitForSeconds(2);
+        Fadeout(thirteen);
+        yield return new WaitForSeconds(2);
+        Fadein(fourtheen);
+        yield return new WaitForSeconds(3);
+        Fadeout(fourtheen);
+        yield return new WaitForSeconds(2);
+        Fadein(fiveteen);
+        yield return new WaitForSeconds(3);
+        Fadeout(fiveteen);
+        yield return new WaitForSeconds(5);
+        Fadein(Title);
+        yield return new WaitForSeconds(6);
+        Fadeout(Title);
+        yield return new WaitForSeconds(3);
+        Fadein(Thanks);
+        yield return new WaitForSeconds(3);
+        Fadeout(Thanks);
+        yield return new WaitForSeconds(3);
+        Fadein(Music);
+        yield return new WaitForSeconds(3);
+        Fadeout(Music);
+        yield return new WaitForSeconds(3);
+        Fadein(ListeOfMusic);
+        yield return new WaitForSeconds(7);
+        Fadeout(ListeOfMusic);
+        yield return new WaitForSeconds(3);
+        Fadein(madeBy);
+        yield return new WaitForSeconds(7);
+        Fadeout(madeBy);
+        yield return new WaitForSeconds(3);
+        Fadein(jam);
+        yield return new WaitForSeconds(7);
+        Fadeout(jam);
+
+
+    }
+    void Fadein(Text a)
+    {
+        a.CrossFadeAlpha(1.0f, 1.5f, false);
+    }
+    void Fadeout(Text a)
+    {
+        a.CrossFadeAlpha(0.0f, 1.5f, false);
+    }
+}
